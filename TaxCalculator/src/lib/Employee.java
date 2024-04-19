@@ -48,9 +48,12 @@ public class Employee {
 	}
 	
 	/**
-	 * Fungsi untuk menentukan gaji bulanan pegawai berdasarkan grade kepegawaiannya (grade 1: 3.000.000 per bulan, grade 2: 5.000.000 per bulan, grade 3: 7.000.000 per bulan)
-	 * Jika pegawai adalah warga negara asing gaji bulanan diperbesar sebanyak 50%
-	 */
+     * Sets the monthly salary of the employee based on the provided grade.
+     * If the employee is a foreigner, the salary is increased by 50%.
+     * 
+     * @param grade The grade of the employee (1, 2, or 3).
+     * @param isForeigner True if the employee is a foreigner, false otherwise.
+     */
 	
      public void setMonthlySalary(int grade, boolean isForeigner) {
         SalaryDetails salaryDetails = new SalaryDetails(grade, isForeigner);
